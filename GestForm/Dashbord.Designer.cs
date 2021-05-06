@@ -174,6 +174,7 @@ namespace GestForm
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(780, 521);
             this.panel4.TabIndex = 16;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // label1
             // 
@@ -202,7 +203,7 @@ namespace GestForm
             this.btnapprenant.ForeColor = System.Drawing.Color.White;
             this.btnapprenant.Image = ((System.Drawing.Image)(resources.GetObject("btnapprenant.Image")));
             this.btnapprenant.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnapprenant.Location = new System.Drawing.Point(67, 261);
+            this.btnapprenant.Location = new System.Drawing.Point(64, 201);
             this.btnapprenant.Name = "btnapprenant";
             this.btnapprenant.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnapprenant.OnHoverBorderColor = System.Drawing.Color.Transparent;
@@ -233,7 +234,7 @@ namespace GestForm
             this.btnformateur.ForeColor = System.Drawing.Color.White;
             this.btnformateur.Image = ((System.Drawing.Image)(resources.GetObject("btnformateur.Image")));
             this.btnformateur.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnformateur.Location = new System.Drawing.Point(443, 261);
+            this.btnformateur.Location = new System.Drawing.Point(440, 201);
             this.btnformateur.Name = "btnformateur";
             this.btnformateur.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnformateur.OnHoverBorderColor = System.Drawing.Color.Transparent;
@@ -259,6 +260,7 @@ namespace GestForm
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Dashbord";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -40,8 +40,8 @@ namespace GestForm
 
         private void btnapprenant_Click_1(object sender, EventArgs e)
         {
-            Apprenant apprenant = new Apprenant();
-            apprenant.Show();
+            Session session = new Session();
+            session.Show();
             this.Hide();
         }
 
@@ -61,6 +61,9 @@ namespace GestForm
             this.Hide();
         }
 
-      
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

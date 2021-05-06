@@ -16,5 +16,10 @@ namespace GestForm
         {
             InitializeComponent();
         }
+
+        private void Session_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
