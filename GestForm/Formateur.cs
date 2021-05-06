@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GestForm
 {
-    public partial class Form1 : Form
+    public partial class Formateur : Form
     {
-        public Form1()
+        public Formateur()
         {
             InitializeComponent();
         }
