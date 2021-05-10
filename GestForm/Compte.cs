@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GestForm
+namespace GesForm.DAL
 {
     public partial class Apprenant : Form
     {
@@ -16,5 +16,7 @@ namespace GestForm
         {
             InitializeComponent();
         }
+
+        
     }
 }

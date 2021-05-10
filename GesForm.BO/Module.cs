@@ -13,17 +13,17 @@ namespace GesForm.BO
 
         public string Nom { get; set; }
         public  int IdCours { get; set; }
-        public int IdApprenant { get; set; }
+       
 
         public Module()
         {
         }
 
-        public Module(string nom, int idCours, int idApprenant)
+        public Module(string nom, int idCours)
         {
             Nom = nom;
             IdCours = idCours;
-            IdApprenant = idApprenant;
+          
         }
     }
 }

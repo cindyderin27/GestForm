@@ -34,16 +34,49 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.5.3">
-      <HintPath>E:\Plugin\Bunifu_UI_v1.5.3.dll</HintPath>
+      <HintPath>..\..\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Devart.Data, Version=5.0.2658.0, Culture=neutral, PublicKeyToken=09af7300eec23701, processorArchitecture=MSIL">
+      <HintPath>..\packages\Devart.Data.5.0.2658\lib\netstandard2.0\Devart.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Devart.Data.PostgreSql, Version=7.20.1866.0, Culture=neutral, PublicKeyToken=09af7300eec23701, processorArchitecture=MSIL">
+      <HintPath>..\packages\Devart.Data.PostgreSql.7.20.1866\lib\netstandard2.0\Devart.Data.PostgreSql.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Guna.UI">
-      <HintPath>E:\Plugin\Guna.UI.dll</HintPath>
+      <HintPath>..\..\Guna.UI.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.Win32.Registry, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Win32.Registry.4.5.0\lib\net461\Microsoft.Win32.Registry.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Diagnostics.PerformanceCounter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.PerformanceCounter.4.5.0\lib\net461\System.Diagnostics.PerformanceCounter.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.AccessControl, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.AccessControl.4.5.0\lib\net461\System.Security.AccessControl.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Principal.Windows.4.5.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Text.Encoding.CodePages, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encoding.CodePages.4.5.0\lib\net461\System.Text.Encoding.CodePages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -55,11 +88,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Apprenant.cs">
+    <Compile Include="Compte.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Apprenant.Designer.cs">
-      <DependentUpon>Apprenant.cs</DependentUpon>
+    <Compile Include="Compte.Designer.cs">
+      <DependentUpon>Compte.cs</DependentUpon>
     </Compile>
     <Compile Include="Cours.cs">
       <SubType>Form</SubType>
@@ -93,11 +126,14 @@
     <Compile Include="Session.Designer.cs">
       <DependentUpon>Session.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Apprenant.resx">
-      <DependentUpon>Apprenant.cs</DependentUpon>
+    <EmbeddedResource Include="Compte.resx">
+      <DependentUpon>Compte.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashbord.resx">
       <DependentUpon>Dashbord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formateur.resx">
+      <DependentUpon>Formateur.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -111,6 +147,7 @@
     <EmbeddedResource Include="Session.resx">
       <DependentUpon>Session.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
